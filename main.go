@@ -20,7 +20,7 @@ func main() {
 	}
 
 	versionCmd.Flags().StringVarP(&Source, "source", "s", "../../identity/default", "Source directory to read from")
-	versionCmd.Flags().BoolVarP(&isOn, "on", "o", true, "Offboarding Employee(s), Default is Onboarding (WIP)")
+	versionCmd.Flags().BoolVarP(&isOn, "on", "o", true, "Offboarding inactive(s), Default is Onboarding (WIP)")
 	// versionCmd.MarkFlagRequired("source")
 
 	var rootCmd = &cobra.Command{Use: "root"}
